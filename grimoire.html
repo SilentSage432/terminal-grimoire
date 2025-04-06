@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🧙‍♂️ Code Assistant Command Grimoire</title>
+  <style>
+    body {
+      background: #1e1e2f;
+      color: #f3f3f3;
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #00ffe7;
+    }
+    code {
+      background-color: #2a2a3b;
+      padding: 2px 6px;
+      border-radius: 5px;
+      font-family: monospace;
+    }
+    code:hover {
+      box-shadow: 0 0 10px #ff79c6;
+      background: #383850;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    li::before {
+      content: "✦ ";
+      color: #ff79c6;
+    }
+    li:hover {
+      color: #00ffe7;
+    }
+    hr {
+      margin: 2rem 0;
+      border: none;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #00ffe7, transparent);
+    }
+    h2:hover {
+      text-shadow: 0 0 10px #00ffe7;
+    }
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      pointer-events: none;
+      background-image: radial-gradient(circle, #00ffe7 1px, transparent 1px);
+      background-size: 60px 60px;
+      opacity: 0.05;
+      animation: shimmer 20s linear infinite;
+    }
+    @keyframes shimmer {
+      0% { background-position: 0 0; }
+      100% { background-position: 100px 100px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="intro" style="font-family: 'Courier New', monospace; font-size: 1.2rem; margin-bottom: 2rem;"></div>
+  <p id="tip" style="font-style: italic; color: #ccc;"></p>
+
+  <h1>🧙‍♂️ Code Assistant Command Grimoire</h1>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>⚙️ Git Commands</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>git status</code> — Check what’s changed.</li>
+    <li><code>git add .</code> — Stage all changes.</li>
+    <li><code>git add app.py run.py</code> — Stage specific files.</li>
+    <li><code>git commit -m "Your message"</code> — Save your staged changes with a message.</li>
+    <li><code>git push</code> — Send changes to GitHub.</li>
+    <li><code>git pull origin main --rebase</code> — Pull latest changes before pushing.</li>
+    <li><code>git push --force</code> — Overwrite remote (⚠️ use with caution).</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🐍 Flask App</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>python3 run.py</code> — Start the Flask app with 0.0.0.0 binding.</li>
+    <li><code>python3 app.py</code> — (Alt script if configured to run the server)</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🌍 Ngrok</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>ngrok http 5000</code> — Tunnel your Flask app publicly.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🧪 Virtual Machine</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>ip a</code> — Get your local IP address.</li>
+    <li><code>sudo systemctl start httpd</code> — Start Apache on Red Hat.</li>
+    <li><code>sudo firewall-cmd --permanent --add-port=80/tcp</code> — Open port 80.</li>
+    <li><code>sudo firewall-cmd --reload</code> — Apply new firewall rules.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🗂️ VS Code / Git</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>code .</code> — Open current directory in VS Code.</li>
+    <li><code>ls -a</code> — Show all files, including hidden <code>.git</code>.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🔥 TMUX / Terminal Tricks</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>tmux</code> — Open a session (if installed)</li>
+    <li><code>screen</code> — Alt to TMUX</li>
+    <li><code>Ctrl + Alt + F3</code> — Switch to another virtual terminal</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>🧙 Advanced Terminal Spells</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>alias gs='git status'</code> — Create a quick alias for a frequent command.</li>
+    <li><code>history | grep keyword</code> — Search your terminal history for past commands.</li>
+    <li><code>!!</code> — Repeat the last command.</li>
+    <li><code>!123</code> — Run command number 123 from your history.</li>
+    <li><code>df -h</code> — View disk space usage in human-readable format.</li>
+    <li><code>top</code> — View real-time system processes.</li>
+    <li><code>htop</code> — Fancy version of <code>top</code> (requires install).</li>
+    <li><code>du -sh *</code> — Show folder sizes in current directory.</li>
+    <li><code>ps aux | grep python</code> — Find running Python processes.</li>
+    <li><code>curl wttr.in</code> — Get the weather from your terminal.</li>
+    <li><code>uptime</code> — See how long the system has been running.</li>
+    <li><code>whoami</code> — Display current user.</li>
+    <li><code>chmod +x script.sh</code> — Make a script executable.</li>
+    <li><code>chown user:group file</code> — Change file ownership.</li>
+    <li><code>scp file user@host:/path</code> — Securely copy files between systems.</li>
+    <li><code>rsync -avh --progress src/ dest/</code> — Sync directories with progress display.</li>
+    <li><code>grep -r "pattern" .</code> — Recursively search for a pattern.</li>
+    <li><code>find . -name "*.py"</code> — Find all Python files from current directory down.</li>
+    <li><code>nc -zv host port</code> — Check if a port is open on a host.</li>
+    <li><code>tar -czvf archive.tar.gz folder</code> — Compress a folder into a tar.gz file.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>📦 Package Management Magic</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>pip install package</code> — Install a Python package.</li>
+    <li><code>pip list</code> — Show installed Python packages.</li>
+    <li><code>pip freeze > requirements.txt</code> — Save package list to file.</li>
+    <li><code>npm install package</code> — Install a Node.js package.</li>
+    <li><code>npm run dev</code> — Start a development server.</li>
+    <li><code>npm install -g package</code> — Install globally with npm.</li>
+    <li><code>sudo apt update</code> — Refresh package list (Debian-based).</li>
+    <li><code>sudo apt install package</code> — Install packages (Debian-based).</li>
+    <li><code>sudo dnf install package</code> — Install packages (Red Hat-based).</li>
+    <li><code>sudo dnf groupinstall "Development Tools"</code> — Install dev tools on Fedora/RHEL.</li>
+  </ul>
+
+  <hr>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+
+  <h2>⚗️ Shell Script Alchemy</h2>
+  <p style="text-align:center; font-size: 1.5rem;">✶ ✦ ✧ ✵ ✶</p>
+  <ul>
+    <li><code>#!/bin/bash</code> — Declare the script interpreter.</li>
+    <li><code>echo "Hello, World!"</code> — Print a message to the terminal.</li>
+    <li><code>read -p "Enter name: " name</code> — Take user input into a variable.</li>
+    <li><code>if [ "$name" == "Sage" ]; then echo "Welcome back!"; fi</code> — Basic conditional logic.</li>
+    <li><code>for file in *.txt; do echo $file; done</code> — Loop over files with a pattern.</li>
+    <li><code>function greet() { echo "Hello, $1"; }</code> — Define a simple function.</li>
+    <li><code>chmod +x script.sh</code> — Make your script executable.</li>
+    <li><code>./script.sh</code> — Run your shell script.</li>
+    <li><code>crontab -e</code> — Edit scheduled tasks for automation.</li>
+    <li><code>trap "echo Exiting..." EXIT</code> — Trap cleanup commands on script exit.</li>
+  </ul>
+
+  <p style="text-align:center; color: #888; margin-top: 3rem;">Add your own spells as you go. ✍️</p>
+  
+  <script>
+    const text = "📜 Welcome, Seeker of Terminal Magick...";
+    let i = 0;
+    const intro = document.getElementById("intro");
+
+    function typeWriter() {
+      if (i < text.length) {
+        intro.innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+
+    const tips = [
+      "💡 You can use <code>!!</code> to rerun your last command.",
+      "💡 Use <code>grep -r</code> to summon hidden truths from your codebase.",
+      "💡 Want a visual spellbook? Try <code>htop</code> instead of <code>top</code>."
+    ];
+    document.getElementById("tip").innerHTML = tips[Math.floor(Math.random() * tips.length)];
+  </script>
+</body>
+</html>
